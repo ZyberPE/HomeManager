@@ -1,0 +1,22 @@
+max-homes: 10
+
+messages:
+  no-permission: "§cYou do not have permission to use this command."
+  player-only: "§cThis command can only be used in-game."
+  usage-sethome: "§cUsage: /sethome <name>"
+  usage-home: "§cUsage: /home <name>"
+  usage-delhome: "§cUsage: /delhome <name>"
+  usage-seehomes: "§cUsage: /seehomes <player>"
+  usage-seehome: "§cUsage: /seehome <player> <home>"
+
+  home-set: "§aHome '{home}' has been set."
+  home-exists: "§cYou already have a home named '{home}'."
+  home-deleted: "§aHome '{home}' has been deleted."
+  home-not-found: "§cHome '{home}' not found."
+  home-teleported: "§aTeleported to home '{home}'."
+  max-homes: "§cYou have reached the maximum number of homes."
+
+  homes-list: "§eYour Homes: {homes}"
+  other-homes-list: "§e{player}'s Homes: {homes}"
+
+  player-not-found: "§cPlayer not found."
