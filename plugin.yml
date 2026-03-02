@@ -1,0 +1,43 @@
+name: HomeManager
+main: HomeManager\Main
+version: 1.0.0
+api: 5.0.0
+author: zyberpe
+
+permissions:
+  home.use:
+    default: true
+  home.sethome:
+    default: true
+  home.delhome:
+    default: true
+  home.see:
+    default: op
+  home.bypass:
+    default: op
+
+commands:
+  sethome:
+    description: Set a home
+    usage: "/sethome <name>"
+    permission: home.sethome
+  home:
+    description: Teleport to a home
+    usage: "/home <name>"
+    permission: home.use
+  delhome:
+    description: Delete a home
+    usage: "/delhome <name>"
+    permission: home.delhome
+  homes:
+    description: List your homes
+    usage: "/homes"
+    permission: home.use
+  seehomes:
+    description: View another player's homes
+    usage: "/seehomes <player>"
+    permission: home.see
+  seehome:
+    description: Teleport to another player's home
+    usage: "/seehome <player> <home>"
+    permission: home.see
