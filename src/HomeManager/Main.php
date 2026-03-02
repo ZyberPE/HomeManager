@@ -33,12 +33,25 @@ class Main extends PluginBase {
     }
 
     private function resolvePlayer(string $partial): ?string {
-        foreach (Server::getInstance()->getOfflinePlayers() as $player) {
-            if (stripos($player->getName(), $partial) === 0) {
-                return strtolower($player->getName());
-            }
+
+    $partial = strtolower($partial);
+
+    // Check online players first
+    foreach (Server::getInstance()->getOnlinePlayers() as $player) {
+        if (str_starts_with(strtolower($player->getName()), $partial)) {
+            return strtolower($player->getName());
         }
-        return null;
+    }
+
+    // Check saved homes (offline players)
+    foreach ($this->homes->getAll() as $playerName => $data) {
+        if (str_starts_with(strtolower($playerName), $partial)) {
+            return strtolower($playerName);
+        }
+    }
+
+    return null;
+}
     }
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
