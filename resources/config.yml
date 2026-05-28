@@ -19,4 +19,4 @@ messages:
   homes-list: "§eYour Homes: {homes}"
   other-homes-list: "§e{player}'s Homes: {homes}"
 
-  player-not-found: "§cPlayer not found."
+  player-not-found: "§cPlayer not found if player offline try entering full name."
