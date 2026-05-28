@@ -14,7 +14,7 @@ messages:
   home-deleted: "§aHome '{home}' has been deleted."
   home-not-found: "§cHome '{home}' not found."
   home-teleported: "§aTeleported to home '{home}'."
-  max-homes: "§cYou have reached the maximum number of homes."
+  max-homes: "§cYou have reached the maximum number of homes purchase a rank too have more and a higher rank for unlimited."
 
   homes-list: "§eYour Homes: {homes}"
   other-homes-list: "§e{player}'s Homes: {homes}"
